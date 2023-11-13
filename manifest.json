@@ -1,0 +1,33 @@
+{
+	"name": "Convert VX Extension",
+	"version": "1.0",
+	"manifest_version": 3,
+	"description": "Convert the domain twitter.com / x.com to the domain vxtwitter.com.",
+	"background": {
+		"service_worker": "service-worker.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*/*",
+				"https://*/*"
+			],
+			"js": [
+				"content-script.js"
+			]
+		}
+	],
+	"commands": {
+		"inject-script": {
+			"suggested_key": {
+				"default": "Ctrl+Shift+V",
+				"mac": "Command+Shift+V"
+			},
+			"description": "Run scripts on the page"
+		}
+	},
+	"permissions": [
+		"clipboardWrite",
+		"activeTab"
+	]
+}
