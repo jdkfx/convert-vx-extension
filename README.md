@@ -7,3 +7,7 @@
 ## Project setup
 
 `chrome://extensions/` から追加
+
+## How to use
+
+- リンクをコピーしたいタブ上で `Ctrl+Shift+V` or `Command+Shift+V` するとリンクがコピーされます
